@@ -6,15 +6,15 @@ def position_taken?(board, index)
 
   if board[index] == " " or board[index] == "" or board[index] == nil
     return false
-  else 
+  else
     return true
   end
 end
 
-def valid_move?(board, index) 
+def valid_move?(board, index)
   if index.between(0,8) and (position_taken(board, index) == false)
     return true
-  else 
+  else
     return false
   end
 end
